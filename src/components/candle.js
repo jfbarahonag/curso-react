@@ -26,8 +26,10 @@ class Candle extends Component{
     render() {
         return(
             <div className="candle">
-                <h1>Vela XYZ</h1>
+                <h1>{ this.props.name }</h1>
+                {this.props.fragancy}
                 <Description />
+                <p>{this.props.cost}</p>
                 <Button variant="contained">
                     Click me
                 </Button>

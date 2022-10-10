@@ -6,10 +6,16 @@ import Candle, * as D from './components/candle'
 function App() {
   const description = 'lorem ipsum ';
   const fragancies = ['frag A', 'frag B', 'frag C'];
+  const candleName = 'vela A'
+  const fragancyName = 'fragancia A'
   return (
     <div className="App">
       <Header />
-      <Candle />
+      <Candle
+        name={candleName}
+        fragancy={fragancyName}
+        cost={45000}
+      />
       <D.Fragance />
       <D.Description />
       Descripcion: {description}
