@@ -4,9 +4,10 @@ import AddIcon from '@mui/icons-material/Add';
 
 class NewCandle extends Component {
 
-    addDish(evt) {
+    addDish = (evt) => {
         evt.preventDefault();
         console.log('Add a candle');
+        console.log(this);
     }
 
     render() {
