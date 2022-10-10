@@ -24,7 +24,7 @@ function App() {
       <ul>
         {
           fragancies.map((fragancy, idx) => 
-            <li className={`${fragancy}`}>
+            <li key={idx}>
               { fragancy }
             </li>
           )

@@ -37,7 +37,7 @@ class Candle extends Component{
                 <Description />
                 <p>{this.props.cost}</p>
                 Total colors: {this.countColors()}
-                <ul>{this.colors.map(color => <li>{color}</li>)}
+                <ul>{this.colors.map((color, idx) => <li key={idx}>{color}</li>)}
                 </ul>
                 <Button variant="contained">
                     Click me
