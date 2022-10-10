@@ -23,6 +23,12 @@ export class Description extends Component{
 }
 
 class Candle extends Component{
+    colors = ['yellow', 'blue', 'red']
+
+    countColors() {
+        return this.colors.length;
+    }
+    
     render() {
         return(
             <div className="candle">
@@ -30,6 +36,9 @@ class Candle extends Component{
                 {this.props.fragancy}
                 <Description />
                 <p>{this.props.cost}</p>
+                Total colors: {this.countColors()}
+                <ul>{this.colors.map(color => <li>{color}</li>)}
+                </ul>
                 <Button variant="contained">
                     Click me
                 </Button>
