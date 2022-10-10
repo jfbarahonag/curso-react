@@ -2,6 +2,7 @@
 import './styles/App.css';
 import Header from './components/header'
 import Candle, * as D from './components/candle'
+import NewCandle from './components/newCandle';
 
 function App() {
   const description = 'lorem ipsum ';
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <NewCandle />
       <Candle
         name={candleName}
         fragancy={fragancyName}
