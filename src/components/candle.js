@@ -25,7 +25,9 @@ class Candle extends Component{
     render() {
         return(
             <div>
-                <h1>Vela XYZ</h1>
+                <h1
+                className="candle"
+                >Vela XYZ</h1>
                 <Description />
             </div>
         )
