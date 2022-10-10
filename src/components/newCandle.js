@@ -4,28 +4,31 @@ import AddIcon from '@mui/icons-material/Add';
 
 class NewCandle extends Component {
 
-    addDish = (evt) => {
+    addCandle = (evt) => {
         evt.preventDefault();
         console.log('Add a candle');
-        console.log(this);
+        console.log(this.newCandle.value);
     }
+
+    newCandle = React.createRef();
 
     render() {
         console.log(this);
         return (
         <form autoComplete='off'
-            onSubmit={this.addDish}>
+            onSubmit={this.addCandle}>
             <TextField
                 label="Vela..."
                 type='text'
                 margin='normal'
                 variant='outlined'
+                inputRef={evt => (this.newCandle = evt)}
             />
             <Fab 
                 color='primary'
                 size='medium'
                 className='candle-form-icon'
-                onClick={this.addDish}>
+                onClick={this.addCandle}>
                     <AddIcon />
             </Fab>
         </form>
