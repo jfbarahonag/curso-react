@@ -1,4 +1,5 @@
 import { Component, Fragment } from "react";
+import Button from '@mui/material/Button';
 
 export class Fragance extends Component{
     render() {
@@ -24,11 +25,12 @@ export class Description extends Component{
 class Candle extends Component{
     render() {
         return(
-            <div>
-                <h1
-                className="candle"
-                >Vela XYZ</h1>
+            <div className="candle">
+                <h1>Vela XYZ</h1>
                 <Description />
+                <Button variant="contained">
+                    Click me
+                </Button>
             </div>
         )
     }
