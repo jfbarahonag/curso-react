@@ -5,12 +5,15 @@ import AddIcon from '@mui/icons-material/Add';
 class NewCandle extends Component {
 
     addDish(evt) {
+        evt.preventDefault();
         console.log('Add a candle');
     }
 
     render() {
+        console.log(this);
         return (
-        <form autoComplete='off'>
+        <form autoComplete='off'
+            onSubmit={this.addDish}>
             <TextField
                 label="Vela..."
                 type='text'
