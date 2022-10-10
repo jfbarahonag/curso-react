@@ -1,11 +1,12 @@
-import { Component } from "react";
+import { Component, Fragment } from "react";
 
 export class Fragance extends Component{
     render() {
         return(
-            <div>
-                <h3>Fragancia</h3>
-            </div>
+            <Fragment>
+                <h1>Fragancia</h1>
+                <h1>Fragancia</h1>
+            </Fragment>
         )
     }
 }
