@@ -4,8 +4,8 @@ export class Fragance extends Component{
     render() {
         return(
             <Fragment>
-                <h1>Fragancia</h1>
-                <h1>Fragancia</h1>
+                <h4>Fragancia</h4>
+                <h4>Fragancia</h4>
             </Fragment>
         )
     }

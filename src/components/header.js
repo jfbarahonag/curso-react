@@ -4,7 +4,7 @@ class Header extends Component{
     render() {
         return(
             <section>
-                <h1>Velas decoradas</h1>
+                <h4>Velas decoradas</h4>
             </section>
         )
     }
